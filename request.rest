@@ -1,0 +1,26 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJpa2hzYW4iLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjY0ODgxNTc0LCJleHAiOjE2NjQ4ODE1OTR9.UI-zUoZm6-IQWVj9vCIaroVM4p7UjxTX5sXIb2uhHm0
+
+###
+
+POST  http://localhost:5000/users 
+Content-Type: application/json
+
+{
+    "name" : "ikhsan2",
+    "email" : "test@gmail.com",
+    "password" : "123456",
+    "confPassword" : "12345"
+}
+
+###
+
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "test@gmail.com",
+    "password" : "123456"
+}
+
+
