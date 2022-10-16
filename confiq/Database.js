@@ -10,7 +10,7 @@ import * as pg from 'pg';
 //     }
 // });
 
-const db = new Sequelize('postgres://asxotglipxypxt:f17f9641cc65de5fae73dedc12c8618d1205111580f8111f3e36bca54b55b040@ec2-3-92-98-129.compute-1.amazonaws.com:5432/d5scgbbuaov45e', {
+const db = new Sequelize('postgres://zahkpggfdgegcd:c57778c4a1c0f1d7ab21d3af32c9a155238d5a2957e7614547a04b38776c2a9d@ec2-44-210-228-110.compute-1.amazonaws.com:5432/d2gsofm82snnqk', {
     dialect: 'postgres',
     protocol: 'postgres',
     dialectOptions: {
