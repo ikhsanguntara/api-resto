@@ -21,7 +21,6 @@ export const getFoodId = async (req, res) => {
 }
 
 export const postFoods = async (req, res) => {
-    console.log(req.body, "body")
     const { name, description, ingredients, price, rate, types } = req.body;
 
     if (name === '') return res.status(400).json({ msg: "mandatory" });

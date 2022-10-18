@@ -3,8 +3,12 @@ import { getUsers, getById, Register, Login, Logout } from "../controllers/Users
 import { verifyToken } from "../middleware/VerifyToken.js";
 import { refreshToken } from "../controllers/RefreshToken.js";
 import { getFoodId, getFoods, postFoods } from '../controllers/Foods.js';
+import { getTransactions, postTransactions } from "../controllers/Transactions.js";
 
 const router = express.Router();
+//transactions
+router.get('/transactions', verifyToken, getTransactions);
+router.post('/transactions', verifyToken, postTransactions);
 //food
 router.get('/foods', verifyToken, getFoods);
 router.post('/foods', verifyToken, postFoods);
